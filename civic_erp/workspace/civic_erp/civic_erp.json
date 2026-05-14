@@ -1,0 +1,200 @@
+{
+  "category": "Modules",
+  "charts": [],
+  "content": "[{\"id\": \"hd-1\", \"type\": \"header\", \"data\": {\"text\": \"Fund Accounting\", \"col\": 12}}, {\"id\": \"sc-1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund\", \"col\": 3}}, {\"id\": \"sc-2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund Transaction\", \"col\": 3}}, {\"id\": \"sc-3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Head\", \"col\": 3}}, {\"id\": \"sc-4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund Transfer\", \"col\": 3}}, {\"id\": \"hd-2\", \"type\": \"header\", \"data\": {\"text\": \"Grant Management\", \"col\": 12}}, {\"id\": \"sc-5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant\", \"col\": 3}}, {\"id\": \"sc-6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Application\", \"col\": 3}}, {\"id\": \"sc-7\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Disbursement\", \"col\": 3}}, {\"id\": \"sc-8\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Utilization Report\", \"col\": 3}}, {\"id\": \"hd-3\", \"type\": \"header\", \"data\": {\"text\": \"Donor Management\", \"col\": 12}}, {\"id\": \"sc-9\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donor\", \"col\": 3}}, {\"id\": \"sc-10\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donation\", \"col\": 3}}, {\"id\": \"sc-11\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donation Receipt\", \"col\": 3}}, {\"id\": \"sc-12\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pledge\", \"col\": 3}}, {\"id\": \"hd-4\", \"type\": \"header\", \"data\": {\"text\": \"FCRA & CSR\", \"col\": 12}}, {\"id\": \"sc-13\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"FCRA Registration\", \"col\": 3}}, {\"id\": \"sc-14\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Foreign Contribution\", \"col\": 3}}, {\"id\": \"sc-15\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"FCRA Annual Return\", \"col\": 3}}, {\"id\": \"sc-16\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"CSR Project\", \"col\": 3}}, {\"id\": \"hd-5\", \"type\": \"header\", \"data\": {\"text\": \"Programs & Beneficiaries\", \"col\": 12}}, {\"id\": \"sc-17\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Program\", \"col\": 3}}, {\"id\": \"sc-18\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Beneficiary\", \"col\": 3}}, {\"id\": \"sc-19\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Beneficiary Enrollment\", \"col\": 3}}, {\"id\": \"sc-20\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Program Activity\", \"col\": 3}}, {\"id\": \"hd-6\", \"type\": \"header\", \"data\": {\"text\": \"Volunteers\", \"col\": 12}}, {\"id\": \"sc-21\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer\", \"col\": 3}}, {\"id\": \"sc-22\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer Assignment\", \"col\": 3}}, {\"id\": \"sc-23\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer Timesheet\", \"col\": 3}}, {\"id\": \"hd-7\", \"type\": \"header\", \"data\": {\"text\": \"Procurement & HR\", \"col\": 12}}, {\"id\": \"sc-24\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Tender\", \"col\": 3}}, {\"id\": \"sc-25\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Procurement Request\", \"col\": 3}}, {\"id\": \"sc-26\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Staff\", \"col\": 3}}, {\"id\": \"sc-27\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Compliance Tracker\", \"col\": 3}}, {\"id\": \"hd-8\", \"type\": \"header\", \"data\": {\"text\": \"Governance\", \"col\": 12}}, {\"id\": \"sc-28\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Board Member\", \"col\": 3}}, {\"id\": \"sc-29\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Board Meeting\", \"col\": 3}}, {\"id\": \"sc-30\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Utilization Certificate\", \"col\": 3}}]",
+  "doctype": "Workspace",
+  "for_user": "",
+  "icon": "uil uil-building",
+  "is_hidden": 0,
+  "label": "CivicEdge",
+  "module": "Civic Operations",
+  "name": "CivicEdge",
+  "owner": "Administrator",
+  "public": 1,
+  "roles": [],
+  "sequence_id": 1,
+  "shortcuts": [
+    {
+      "label": "Fund",
+      "link_to": "Fund",
+      "type": "DocType",
+      "name": "sc-fund"
+    },
+    {
+      "label": "Fund Transaction",
+      "link_to": "Fund Transaction",
+      "type": "DocType",
+      "name": "sc-ftxn"
+    },
+    {
+      "label": "Budget Head",
+      "link_to": "Budget Head",
+      "type": "DocType",
+      "name": "sc-bh"
+    },
+    {
+      "label": "Fund Transfer",
+      "link_to": "Fund Transfer",
+      "type": "DocType",
+      "name": "sc-fxfr"
+    },
+    {
+      "label": "Grant",
+      "link_to": "Grant",
+      "type": "DocType",
+      "name": "sc-grant"
+    },
+    {
+      "label": "Grant Application",
+      "link_to": "Grant Application",
+      "type": "DocType",
+      "name": "sc-ga"
+    },
+    {
+      "label": "Grant Disbursement",
+      "link_to": "Grant Disbursement",
+      "type": "DocType",
+      "name": "sc-gd"
+    },
+    {
+      "label": "Grant Utilization Report",
+      "link_to": "Grant Utilization Report",
+      "type": "DocType",
+      "name": "sc-gur"
+    },
+    {
+      "label": "Donor",
+      "link_to": "Donor",
+      "type": "DocType",
+      "name": "sc-donor"
+    },
+    {
+      "label": "Donation",
+      "link_to": "Donation",
+      "type": "DocType",
+      "name": "sc-don"
+    },
+    {
+      "label": "Donation Receipt",
+      "link_to": "Donation Receipt",
+      "type": "DocType",
+      "name": "sc-dr"
+    },
+    {
+      "label": "Pledge",
+      "link_to": "Pledge",
+      "type": "DocType",
+      "name": "sc-plg"
+    },
+    {
+      "label": "FCRA Registration",
+      "link_to": "FCRA Registration",
+      "type": "DocType",
+      "name": "sc-fcra"
+    },
+    {
+      "label": "Foreign Contribution",
+      "link_to": "Foreign Contribution",
+      "type": "DocType",
+      "name": "sc-fc"
+    },
+    {
+      "label": "FCRA Annual Return",
+      "link_to": "FCRA Annual Return",
+      "type": "DocType",
+      "name": "sc-far"
+    },
+    {
+      "label": "CSR Project",
+      "link_to": "CSR Project",
+      "type": "DocType",
+      "name": "sc-csr"
+    },
+    {
+      "label": "Program",
+      "link_to": "Program",
+      "type": "DocType",
+      "name": "sc-prg"
+    },
+    {
+      "label": "Beneficiary",
+      "link_to": "Beneficiary",
+      "type": "DocType",
+      "name": "sc-bnf"
+    },
+    {
+      "label": "Beneficiary Enrollment",
+      "link_to": "Beneficiary Enrollment",
+      "type": "DocType",
+      "name": "sc-benr"
+    },
+    {
+      "label": "Program Activity",
+      "link_to": "Program Activity",
+      "type": "DocType",
+      "name": "sc-pa"
+    },
+    {
+      "label": "Volunteer",
+      "link_to": "Volunteer",
+      "type": "DocType",
+      "name": "sc-vol"
+    },
+    {
+      "label": "Volunteer Assignment",
+      "link_to": "Volunteer Assignment",
+      "type": "DocType",
+      "name": "sc-va"
+    },
+    {
+      "label": "Volunteer Timesheet",
+      "link_to": "Volunteer Timesheet",
+      "type": "DocType",
+      "name": "sc-vts"
+    },
+    {
+      "label": "Tender",
+      "link_to": "Tender",
+      "type": "DocType",
+      "name": "sc-tndr"
+    },
+    {
+      "label": "Procurement Request",
+      "link_to": "Procurement Request",
+      "type": "DocType",
+      "name": "sc-pr"
+    },
+    {
+      "label": "Staff",
+      "link_to": "Staff",
+      "type": "DocType",
+      "name": "sc-stf"
+    },
+    {
+      "label": "Compliance Tracker",
+      "link_to": "Compliance Tracker",
+      "type": "DocType",
+      "name": "sc-ct"
+    },
+    {
+      "label": "Board Member",
+      "link_to": "Board Member",
+      "type": "DocType",
+      "name": "sc-bm"
+    },
+    {
+      "label": "Board Meeting",
+      "link_to": "Board Meeting",
+      "type": "DocType",
+      "name": "sc-brd"
+    },
+    {
+      "label": "Utilization Certificate",
+      "link_to": "Utilization Certificate",
+      "type": "DocType",
+      "name": "sc-uc"
+    }
+  ],
+  "links": [],
+  "title": "CivicEdge"
+}

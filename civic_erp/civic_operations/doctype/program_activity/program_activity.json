@@ -1,0 +1,107 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "program",
+    "activity_name",
+    "activity_type",
+    "activity_date",
+    "location",
+    "col1",
+    "staff_count",
+    "volunteer_count",
+    "beneficiary_count",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "PA-.YYYY.-.#####",
+      "default": "PA-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "program",
+      "fieldtype": "Link",
+      "label": "Program",
+      "options": "Program",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "activity_name",
+      "fieldtype": "Data",
+      "label": "Activity",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "activity_type",
+      "fieldtype": "Select",
+      "label": "Activity Type",
+      "options": "Awareness Camp\nTraining Workshop\nDistribution Drive\nSurvey\nMedical Camp\nLegal Aid\nSkill Training\nCommunity Meeting"
+    },
+    {
+      "fieldname": "activity_date",
+      "fieldtype": "Date",
+      "label": "Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Data",
+      "label": "Location"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "staff_count",
+      "fieldtype": "Int",
+      "label": "Staff Count"
+    },
+    {
+      "fieldname": "volunteer_count",
+      "fieldtype": "Int",
+      "label": "Volunteer Count"
+    },
+    {
+      "fieldname": "beneficiary_count",
+      "fieldtype": "Int",
+      "label": "Beneficiary Count",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Program Activity",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Program Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "track_changes": 1
+}

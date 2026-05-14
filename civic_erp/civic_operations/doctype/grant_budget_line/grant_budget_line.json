@@ -1,0 +1,47 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "budget_category",
+    "allocated_amount",
+    "spent_amount",
+    "variance"
+  ],
+  "fields": [
+    {
+      "fieldname": "budget_category",
+      "fieldtype": "Data",
+      "label": "Budget Category",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "allocated_amount",
+      "fieldtype": "Currency",
+      "label": "Allocated (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "spent_amount",
+      "fieldtype": "Currency",
+      "label": "Spent (Rs)",
+      "default": "0",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "variance",
+      "fieldtype": "Currency",
+      "label": "Variance (Rs)",
+      "read_only": 1,
+      "in_list_view": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Grant Budget Line",
+  "owner": "Administrator",
+  "permissions": []
+}

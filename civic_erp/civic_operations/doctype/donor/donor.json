@@ -1,0 +1,123 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "donor_name",
+    "donor_type",
+    "donor_tier",
+    "col1",
+    "pan_number",
+    "phone",
+    "email",
+    "is_fcra_donor",
+    "is_80g_eligible",
+    "first_donation_date",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "DONOR-.YYYY.-.#####",
+      "default": "DONOR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "donor_name",
+      "fieldtype": "Data",
+      "label": "Donor Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "donor_type",
+      "fieldtype": "Select",
+      "label": "Type",
+      "options": "Individual\nCorporate\nForeign\nCSR\nGovernment",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "donor_tier",
+      "fieldtype": "Select",
+      "label": "Tier",
+      "options": "Major Donor\nRegular Donor\nSmall Donor\nOne-Time",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "pan_number",
+      "fieldtype": "Data",
+      "label": "PAN Number"
+    },
+    {
+      "fieldname": "phone",
+      "fieldtype": "Data",
+      "label": "Phone"
+    },
+    {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email"
+    },
+    {
+      "fieldname": "is_fcra_donor",
+      "fieldtype": "Check",
+      "label": "Foreign (FCRA) Donor"
+    },
+    {
+      "fieldname": "is_80g_eligible",
+      "fieldtype": "Check",
+      "label": "80G Eligible",
+      "default": "1"
+    },
+    {
+      "fieldname": "first_donation_date",
+      "fieldtype": "Date",
+      "label": "First Donation Date",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nInactive",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Donor",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "donor_name",
+  "track_changes": 1
+}

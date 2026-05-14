@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.status == 'Active'",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 3,
+  "doctype": "Notification",
+  "document_type": "Pledge",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>Pledged donor <b>{{ doc.donor }}</b> has a payment of Rs {{ doc.pledged_amount }} due on {{ doc.next_payment_date }} ({{ doc.payment_schedule }}).</p>",
+  "name": "Pledge Payment Due",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Pledge Payment Due in 3 Days: {{ doc.donor }}",
+  "date_changed": "next_payment_date"
+}

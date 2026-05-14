@@ -1,0 +1,81 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "month_year",
+    "program",
+    "volunteer_headcount",
+    "col1",
+    "staff_headcount",
+    "total_hours"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "VSL-.YYYY.-.#####",
+      "default": "VSL-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "month_year",
+      "fieldtype": "Data",
+      "label": "Month/Year",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "program",
+      "fieldtype": "Link",
+      "label": "Program",
+      "options": "Program",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "volunteer_headcount",
+      "fieldtype": "Int",
+      "label": "Volunteer Headcount",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "staff_headcount",
+      "fieldtype": "Int",
+      "label": "Staff Headcount",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_hours",
+      "fieldtype": "Float",
+      "label": "Total Hours",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Volunteer vs Staff Log",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "HR Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "track_changes": 1
+}

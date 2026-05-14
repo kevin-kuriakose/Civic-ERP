@@ -1,0 +1,108 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "volunteer_name",
+    "phone",
+    "email",
+    "skills",
+    "col1",
+    "availability",
+    "background_check_status",
+    "joined_date",
+    "total_hours_contributed",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "VOL-.YYYY.-.#####",
+      "default": "VOL-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "volunteer_name",
+      "fieldtype": "Data",
+      "label": "Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "phone",
+      "fieldtype": "Data",
+      "label": "Phone"
+    },
+    {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email"
+    },
+    {
+      "fieldname": "skills",
+      "fieldtype": "Small Text",
+      "label": "Skills"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "availability",
+      "fieldtype": "Select",
+      "label": "Availability",
+      "options": "Weekdays\nWeekends\nBoth\nFlexible"
+    },
+    {
+      "fieldname": "background_check_status",
+      "fieldtype": "Select",
+      "label": "Background Check",
+      "options": "Pending\nCleared\nFailed",
+      "default": "Pending"
+    },
+    {
+      "fieldname": "joined_date",
+      "fieldtype": "Date",
+      "label": "Joined Date"
+    },
+    {
+      "fieldname": "total_hours_contributed",
+      "fieldtype": "Float",
+      "label": "Total Hours",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nInactive",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Volunteer",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Program Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "volunteer_name",
+  "track_changes": 1
+}

@@ -1,0 +1,89 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "beneficiary",
+    "program",
+    "enrollment_date",
+    "col1",
+    "exit_date",
+    "exit_reason",
+    "outcome_achieved"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "BENR-.YYYY.-.#####",
+      "default": "BENR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "beneficiary",
+      "fieldtype": "Link",
+      "label": "Beneficiary",
+      "options": "Beneficiary",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "program",
+      "fieldtype": "Link",
+      "label": "Program",
+      "options": "Program",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "enrollment_date",
+      "fieldtype": "Date",
+      "label": "Enrollment Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "exit_date",
+      "fieldtype": "Date",
+      "label": "Exit Date"
+    },
+    {
+      "fieldname": "exit_reason",
+      "fieldtype": "Select",
+      "label": "Exit Reason",
+      "options": "\nCompleted\nDropped Out\nRelocated\nDeceased\nOther"
+    },
+    {
+      "fieldname": "outcome_achieved",
+      "fieldtype": "Small Text",
+      "label": "Outcome Achieved"
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Beneficiary Enrollment",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Program Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "track_changes": 1
+}

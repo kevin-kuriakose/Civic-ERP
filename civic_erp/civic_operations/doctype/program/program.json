@@ -1,0 +1,120 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "program_name",
+    "program_type",
+    "linked_fund",
+    "linked_grant",
+    "col1",
+    "target_beneficiary_count",
+    "start_date",
+    "end_date",
+    "budget",
+    "status",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "PRG-.YYYY.-.#####",
+      "default": "PRG-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "program_name",
+      "fieldtype": "Data",
+      "label": "Program Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "program_type",
+      "fieldtype": "Select",
+      "label": "Type",
+      "options": "Education\nHealth\nLivelihood\nWomen Empowerment\nEnvironment\nChild Welfare\nDisaster Relief\nSkill Development\nWater and Sanitation\nDigital Literacy",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "linked_fund",
+      "fieldtype": "Link",
+      "label": "Fund",
+      "options": "Fund"
+    },
+    {
+      "fieldname": "linked_grant",
+      "fieldtype": "Link",
+      "label": "Grant",
+      "options": "Grant"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "target_beneficiary_count",
+      "fieldtype": "Int",
+      "label": "Target Beneficiaries"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date"
+    },
+    {
+      "fieldname": "budget",
+      "fieldtype": "Currency",
+      "label": "Budget (Rs)"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Planning\nActive\nCompleted\nCancelled",
+      "default": "Planning",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Program",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Program Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "program_name",
+  "track_changes": 1
+}

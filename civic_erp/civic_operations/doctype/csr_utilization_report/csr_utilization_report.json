@@ -1,0 +1,109 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "csr_project",
+    "period_start",
+    "period_end",
+    "col1",
+    "expenditure",
+    "outcomes_achieved",
+    "submitted_date",
+    "acknowledgement",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "CSRUR-.YYYY.-.#####",
+      "default": "CSRUR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "csr_project",
+      "fieldtype": "Link",
+      "label": "CSR Project",
+      "options": "CSR Project",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "period_start",
+      "fieldtype": "Date",
+      "label": "Period From",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "period_end",
+      "fieldtype": "Date",
+      "label": "Period To",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "expenditure",
+      "fieldtype": "Currency",
+      "label": "Expenditure (Rs)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "outcomes_achieved",
+      "fieldtype": "Small Text",
+      "label": "Outcomes Achieved"
+    },
+    {
+      "fieldname": "submitted_date",
+      "fieldtype": "Date",
+      "label": "Submitted Date"
+    },
+    {
+      "fieldname": "acknowledgement",
+      "fieldtype": "Data",
+      "label": "Acknowledgement Number"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "CSR Utilization Report",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "CSR Utilization Report",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    }
+  ],
+  "track_changes": 1
+}

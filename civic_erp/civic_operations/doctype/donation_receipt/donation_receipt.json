@@ -1,0 +1,103 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "donation",
+    "donor",
+    "donor_name_display",
+    "col1",
+    "amount",
+    "purpose",
+    "receipt_date",
+    "is_80g"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "80GR-.YYYY.-.#####",
+      "default": "80GR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "donation",
+      "fieldtype": "Link",
+      "label": "Donation",
+      "options": "Donation",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "donor",
+      "fieldtype": "Link",
+      "label": "Donor",
+      "options": "Donor",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "donor_name_display",
+      "fieldtype": "Data",
+      "label": "Donor Name",
+      "read_only": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "purpose",
+      "fieldtype": "Data",
+      "label": "Purpose"
+    },
+    {
+      "fieldname": "receipt_date",
+      "fieldtype": "Date",
+      "label": "Receipt Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "is_80g",
+      "fieldtype": "Check",
+      "label": "80G Receipt",
+      "default": "1"
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Donation Receipt",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "donation",
+  "track_changes": 1
+}

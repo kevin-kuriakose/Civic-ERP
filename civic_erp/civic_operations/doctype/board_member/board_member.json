@@ -1,0 +1,90 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "member_name",
+    "designation",
+    "term_start",
+    "term_end",
+    "col1",
+    "din_number",
+    "background_declaration_signed",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "BM-.YYYY.-.#####",
+      "default": "BM-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "member_name",
+      "fieldtype": "Data",
+      "label": "Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "designation",
+      "fieldtype": "Data",
+      "label": "Designation",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "term_start",
+      "fieldtype": "Date",
+      "label": "Term Start",
+      "reqd": 1
+    },
+    {
+      "fieldname": "term_end",
+      "fieldtype": "Date",
+      "label": "Term End",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "din_number",
+      "fieldtype": "Data",
+      "label": "DIN (Section 8)"
+    },
+    {
+      "fieldname": "background_declaration_signed",
+      "fieldtype": "Check",
+      "label": "Background Declaration Signed"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nRetired",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Board Member",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "title_field": "member_name",
+  "track_changes": 1
+}

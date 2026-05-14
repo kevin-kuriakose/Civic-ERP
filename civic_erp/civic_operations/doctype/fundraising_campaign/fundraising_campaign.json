@@ -1,0 +1,104 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "campaign_name",
+    "target_amount",
+    "start_date",
+    "end_date",
+    "col1",
+    "linked_fund",
+    "total_raised",
+    "status",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "FC-.YYYY.-.#####",
+      "default": "FC-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "campaign_name",
+      "fieldtype": "Data",
+      "label": "Campaign Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "target_amount",
+      "fieldtype": "Currency",
+      "label": "Target Amount (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "linked_fund",
+      "fieldtype": "Link",
+      "label": "Linked Fund",
+      "options": "Fund"
+    },
+    {
+      "fieldname": "total_raised",
+      "fieldtype": "Currency",
+      "label": "Total Raised (Rs)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Planning\nActive\nCompleted\nCancelled",
+      "default": "Planning",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Fundraising Campaign",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "campaign_name",
+  "track_changes": 1
+}

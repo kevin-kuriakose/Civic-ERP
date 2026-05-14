@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.status == 'Assigned'",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 1,
+  "doctype": "Notification",
+  "document_type": "Volunteer Assignment",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>Volunteer <b>{{ doc.volunteer }}</b> has an assignment tomorrow for program <b>{{ doc.program }}</b> in role {{ doc.role }}.</p>",
+  "name": "Volunteer Assignment Reminder",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Volunteer Assignment Tomorrow: {{ doc.volunteer }}",
+  "date_changed": "date"
+}

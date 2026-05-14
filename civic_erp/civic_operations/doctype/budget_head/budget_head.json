@@ -1,0 +1,119 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "head_name",
+    "department",
+    "fiscal_year",
+    "col1",
+    "fund",
+    "grant_ref",
+    "budget_allocation",
+    "spent_amount",
+    "variance",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "BH-.YYYY.-.#####",
+      "default": "BH-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "head_name",
+      "fieldtype": "Data",
+      "label": "Budget Head",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "department",
+      "fieldtype": "Link",
+      "label": "Department",
+      "options": "Department",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "fiscal_year",
+      "fieldtype": "Link",
+      "label": "Fiscal Year",
+      "options": "Fiscal Year",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "fund",
+      "fieldtype": "Link",
+      "label": "Fund",
+      "options": "Fund"
+    },
+    {
+      "fieldname": "grant_ref",
+      "fieldtype": "Link",
+      "label": "Grant",
+      "options": "Grant"
+    },
+    {
+      "fieldname": "budget_allocation",
+      "fieldtype": "Currency",
+      "label": "Budget Allocation (Rs)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "spent_amount",
+      "fieldtype": "Currency",
+      "label": "Spent Amount (Rs)",
+      "default": "0",
+      "read_only": 1
+    },
+    {
+      "fieldname": "variance",
+      "fieldtype": "Currency",
+      "label": "Variance (Rs)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nClosed\nExhausted",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Budget Head",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "head_name",
+  "track_changes": 1
+}

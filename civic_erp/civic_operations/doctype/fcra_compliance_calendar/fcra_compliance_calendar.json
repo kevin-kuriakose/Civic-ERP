@@ -1,0 +1,86 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "obligation_name",
+    "due_date",
+    "filed_date",
+    "col1",
+    "status",
+    "penalty_amount",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "FCC-.YYYY.-.#####",
+      "default": "FCC-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "obligation_name",
+      "fieldtype": "Data",
+      "label": "Obligation",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "due_date",
+      "fieldtype": "Date",
+      "label": "Due Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "filed_date",
+      "fieldtype": "Date",
+      "label": "Filed Date"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nFiled\nOverdue",
+      "default": "Pending",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "penalty_amount",
+      "fieldtype": "Currency",
+      "label": "Penalty Amount (Rs)"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "FCRA Compliance Calendar",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1
+    }
+  ],
+  "track_changes": 1
+}

@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.status == 'Pending'",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 7,
+  "doctype": "Notification",
+  "document_type": "Grant Disbursement",
+  "enabled": 1,
+  "event": "Days After",
+  "message": "<p>Grant disbursement of Rs {{ doc.amount }} from <b>{{ doc.grant }}</b> (Tranche {{ doc.tranche_number }}) was expected on {{ doc.expected_date }} and is now overdue. Please follow up with the granting agency.</p>",
+  "name": "Grant Disbursement Overdue",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Grant Disbursement Overdue: {{ doc.grant }} Tranche {{ doc.tranche_number }}",
+  "date_changed": "expected_date"
+}

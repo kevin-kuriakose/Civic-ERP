@@ -1,0 +1,128 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "fund",
+    "transaction_date",
+    "direction",
+    "amount",
+    "col1",
+    "purpose",
+    "linked_voucher_type",
+    "linked_voucher",
+    "verified_by",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "FTXN-.YYYY.-.#####",
+      "default": "FTXN-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "fund",
+      "fieldtype": "Link",
+      "label": "Fund",
+      "options": "Fund",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "transaction_date",
+      "fieldtype": "Date",
+      "label": "Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "direction",
+      "fieldtype": "Select",
+      "label": "Direction",
+      "options": "In\nOut",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "purpose",
+      "fieldtype": "Data",
+      "label": "Purpose",
+      "reqd": 1
+    },
+    {
+      "fieldname": "linked_voucher_type",
+      "fieldtype": "Select",
+      "label": "Voucher Type",
+      "options": "\nDonation\nGrant Disbursement\nExpense\nTransfer\nOther"
+    },
+    {
+      "fieldname": "linked_voucher",
+      "fieldtype": "Data",
+      "label": "Linked Voucher No"
+    },
+    {
+      "fieldname": "verified_by",
+      "fieldtype": "Link",
+      "label": "Verified By",
+      "options": "User"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Fund Transaction",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Fund Transaction",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "track_changes": 1
+}

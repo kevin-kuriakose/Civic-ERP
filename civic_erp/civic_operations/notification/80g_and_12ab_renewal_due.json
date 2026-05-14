@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.status == 'Pending' and doc.obligation_type in ['80G Renewal', '12AB Renewal']",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 60,
+  "doctype": "Notification",
+  "document_type": "Compliance Tracker",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>Compliance obligation <b>{{ doc.obligation_type }}</b> is due on {{ doc.due_date }}. Please file on time to avoid penalties.</p>",
+  "name": "80G and 12AB Renewal Due",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Compliance Deadline in 60 Days: {{ doc.obligation_type }}",
+  "date_changed": "due_date"
+}

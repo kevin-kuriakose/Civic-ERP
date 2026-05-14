@@ -1,0 +1,124 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "grant",
+    "reporting_period_start",
+    "reporting_period_end",
+    "submitted_date",
+    "col1",
+    "total_expenditure",
+    "balance",
+    "acknowledgement_number",
+    "section_budget",
+    "budget_lines",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "GUR-.YYYY.-.#####",
+      "default": "GUR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "grant",
+      "fieldtype": "Link",
+      "label": "Grant",
+      "options": "Grant",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "reporting_period_start",
+      "fieldtype": "Date",
+      "label": "Period From",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "reporting_period_end",
+      "fieldtype": "Date",
+      "label": "Period To",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "submitted_date",
+      "fieldtype": "Date",
+      "label": "Submitted Date"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "total_expenditure",
+      "fieldtype": "Currency",
+      "label": "Total Expenditure (Rs)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "balance",
+      "fieldtype": "Currency",
+      "label": "Balance (Rs)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "acknowledgement_number",
+      "fieldtype": "Data",
+      "label": "Acknowledgement Number"
+    },
+    {
+      "fieldname": "section_budget",
+      "fieldtype": "Section Break",
+      "label": "Expenditure by Head"
+    },
+    {
+      "fieldname": "budget_lines",
+      "fieldtype": "Table",
+      "label": "Expenditure Lines",
+      "options": "Grant Budget Line"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Grant Utilization Report",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Grant Utilization Report",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    }
+  ],
+  "title_field": "grant",
+  "track_changes": 1
+}

@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.status == 'Active'",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 30,
+  "doctype": "Notification",
+  "document_type": "Grant",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>Grant <b>{{ doc.grant_title }}</b> from {{ doc.granting_agency }} is ending on {{ doc.end_date }}. Please initiate closure or renewal process.</p>",
+  "name": "Grant Ending Soon",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Grant Ending in 30 Days: {{ doc.grant_title }}",
+  "date_changed": "end_date"
+}

@@ -1,0 +1,93 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "grant",
+    "submitted_date",
+    "contact_person",
+    "col1",
+    "approval_date",
+    "outcome",
+    "proposal_document",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "GA-.YYYY.-.#####",
+      "default": "GA-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "grant",
+      "fieldtype": "Link",
+      "label": "Grant",
+      "options": "Grant",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "submitted_date",
+      "fieldtype": "Date",
+      "label": "Submitted Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "contact_person",
+      "fieldtype": "Data",
+      "label": "Contact Person"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "approval_date",
+      "fieldtype": "Date",
+      "label": "Approval Date"
+    },
+    {
+      "fieldname": "outcome",
+      "fieldtype": "Select",
+      "label": "Outcome",
+      "options": "\nApproved\nRejected\nPending\nWithdrawn"
+    },
+    {
+      "fieldname": "proposal_document",
+      "fieldtype": "Attach",
+      "label": "Proposal Document"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Grant Application",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "grant",
+  "track_changes": 1
+}

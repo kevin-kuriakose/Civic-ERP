@@ -1,0 +1,94 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "tender_number",
+    "issuing_authority",
+    "description",
+    "col1",
+    "estimated_value",
+    "submission_deadline",
+    "awarded_to",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "TNDR-.YYYY.-.#####",
+      "default": "TNDR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "tender_number",
+      "fieldtype": "Data",
+      "label": "Tender Number",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "issuing_authority",
+      "fieldtype": "Data",
+      "label": "Issuing Authority",
+      "reqd": 1
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "estimated_value",
+      "fieldtype": "Currency",
+      "label": "Estimated Value (Rs)"
+    },
+    {
+      "fieldname": "submission_deadline",
+      "fieldtype": "Date",
+      "label": "Submission Deadline",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "awarded_to",
+      "fieldtype": "Data",
+      "label": "Awarded To"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Open\nClosed\nAwarded\nCancelled",
+      "default": "Open",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Tender",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "tender_number",
+  "track_changes": 1
+}

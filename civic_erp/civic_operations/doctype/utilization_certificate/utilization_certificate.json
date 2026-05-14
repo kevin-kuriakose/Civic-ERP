@@ -1,0 +1,114 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "grant_or_scheme_name",
+    "uc_number",
+    "period_start",
+    "period_end",
+    "col1",
+    "amount_certified",
+    "submitted_to",
+    "submission_date",
+    "acknowledgement",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "UC-.YYYY.-.#####",
+      "default": "UC-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "grant_or_scheme_name",
+      "fieldtype": "Data",
+      "label": "Grant / Scheme",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "uc_number",
+      "fieldtype": "Data",
+      "label": "UC Number",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "period_start",
+      "fieldtype": "Date",
+      "label": "Period From",
+      "reqd": 1
+    },
+    {
+      "fieldname": "period_end",
+      "fieldtype": "Date",
+      "label": "Period To",
+      "reqd": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "amount_certified",
+      "fieldtype": "Currency",
+      "label": "Amount Certified (Rs)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "submitted_to",
+      "fieldtype": "Data",
+      "label": "Submitted To (Dept)"
+    },
+    {
+      "fieldname": "submission_date",
+      "fieldtype": "Date",
+      "label": "Submission Date",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "acknowledgement",
+      "fieldtype": "Data",
+      "label": "Acknowledgement Number"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Utilization Certificate",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Utilization Certificate",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    }
+  ],
+  "track_changes": 1
+}

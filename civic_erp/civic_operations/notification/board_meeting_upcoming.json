@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.docstatus == 0",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 3,
+  "doctype": "Notification",
+  "document_type": "Board Meeting",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>A Board Meeting is scheduled for <b>{{ doc.date }}</b>. Please review the agenda and ensure attendance confirmation from all board members.</p><p>Agenda: {{ doc.agenda }}</p>",
+  "name": "Board Meeting Upcoming",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Board Meeting in 3 Days: {{ doc.date }}",
+  "date_changed": "date"
+}

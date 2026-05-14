@@ -1,0 +1,111 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "program",
+    "period_start",
+    "period_end",
+    "submitted_by",
+    "col1",
+    "approved_by",
+    "quantitative_outcomes",
+    "qualitative_notes",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "IR-.YYYY.-.#####",
+      "default": "IR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "program",
+      "fieldtype": "Link",
+      "label": "Program",
+      "options": "Program",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "period_start",
+      "fieldtype": "Date",
+      "label": "Period From",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "period_end",
+      "fieldtype": "Date",
+      "label": "Period To",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "submitted_by",
+      "fieldtype": "Link",
+      "label": "Submitted By",
+      "options": "User"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "approved_by",
+      "fieldtype": "Link",
+      "label": "Approved By",
+      "options": "User"
+    },
+    {
+      "fieldname": "quantitative_outcomes",
+      "fieldtype": "Text Editor",
+      "label": "Quantitative Outcomes"
+    },
+    {
+      "fieldname": "qualitative_notes",
+      "fieldtype": "Text Editor",
+      "label": "Qualitative Notes"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Impact Report",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Impact Report",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Program Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    }
+  ],
+  "title_field": "program",
+  "track_changes": 1
+}

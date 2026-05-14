@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.docstatus == 1",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 7,
+  "doctype": "Notification",
+  "document_type": "Foreign Contribution",
+  "enabled": 1,
+  "event": "Days After",
+  "message": "<p>Foreign contribution of {{ doc.amount }} {{ doc.currency }} (Rs {{ doc.inr_equivalent }}) from <b>{{ doc.donor_name }}</b> was received on {{ doc.receipt_date }}. The 7-day FCRA intimation report is now due.</p>",
+  "name": "Foreign Contribution 7 Day Report Due",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "FCRA 7-Day Report Due: Foreign Contribution {{ doc.name }}",
+  "date_changed": "receipt_date"
+}

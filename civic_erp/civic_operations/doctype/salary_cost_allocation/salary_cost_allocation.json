@@ -1,0 +1,112 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "employee",
+    "month_year",
+    "total_salary",
+    "col1",
+    "fund_percent",
+    "grant_percent",
+    "program_percent",
+    "verified_by",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "SCA-.YYYY.-.#####",
+      "default": "SCA-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "label": "Staff",
+      "options": "Staff",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "month_year",
+      "fieldtype": "Data",
+      "label": "Month/Year",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_salary",
+      "fieldtype": "Currency",
+      "label": "Total Salary (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "fund_percent",
+      "fieldtype": "Float",
+      "label": "Fund Allocation %",
+      "default": "0"
+    },
+    {
+      "fieldname": "grant_percent",
+      "fieldtype": "Float",
+      "label": "Grant Allocation %",
+      "default": "0"
+    },
+    {
+      "fieldname": "program_percent",
+      "fieldtype": "Float",
+      "label": "Program Allocation %",
+      "default": "100"
+    },
+    {
+      "fieldname": "verified_by",
+      "fieldtype": "Link",
+      "label": "Verified By",
+      "options": "User"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Salary Cost Allocation",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Salary Cost Allocation",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "HR Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    }
+  ],
+  "track_changes": 1
+}

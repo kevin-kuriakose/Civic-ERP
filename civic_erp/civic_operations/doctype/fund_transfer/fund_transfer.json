@@ -1,0 +1,117 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "transfer_date",
+    "source_fund",
+    "destination_fund",
+    "amount",
+    "col1",
+    "reason",
+    "approval_status",
+    "approved_by",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "FXFR-.YYYY.-.#####",
+      "default": "FXFR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "transfer_date",
+      "fieldtype": "Date",
+      "label": "Transfer Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "source_fund",
+      "fieldtype": "Link",
+      "label": "Source Fund",
+      "options": "Fund",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "destination_fund",
+      "fieldtype": "Link",
+      "label": "Destination Fund",
+      "options": "Fund",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "reason",
+      "fieldtype": "Small Text",
+      "label": "Reason"
+    },
+    {
+      "fieldname": "approval_status",
+      "fieldtype": "Select",
+      "label": "Approval Status",
+      "options": "Pending\nApproved\nRejected",
+      "default": "Pending",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "approved_by",
+      "fieldtype": "Link",
+      "label": "Approved By",
+      "options": "User"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Fund Transfer",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Fund Transfer",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    }
+  ],
+  "track_changes": 1
+}

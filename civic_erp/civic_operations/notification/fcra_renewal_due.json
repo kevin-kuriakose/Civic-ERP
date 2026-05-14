@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.status == 'Active'",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 180,
+  "doctype": "Notification",
+  "document_type": "FCRA Registration",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>FCRA Registration <b>{{ doc.registration_number }}</b> expires on {{ doc.validity_end }}. Initiate renewal with MHA immediately.</p>",
+  "name": "FCRA Renewal Due",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "FCRA Registration Renewal Due in 180 Days",
+  "date_changed": "validity_end"
+}

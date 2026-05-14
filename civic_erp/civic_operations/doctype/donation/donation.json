@@ -1,0 +1,126 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "donor",
+    "donation_date",
+    "amount",
+    "currency",
+    "col1",
+    "fund",
+    "mode_of_payment",
+    "purpose",
+    "is_80g_receipt_issued",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "DON-.YYYY.-.#####",
+      "default": "DON-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "donor",
+      "fieldtype": "Link",
+      "label": "Donor",
+      "options": "Donor",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "donation_date",
+      "fieldtype": "Date",
+      "label": "Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Link",
+      "label": "Currency",
+      "options": "Currency",
+      "default": "INR"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "fund",
+      "fieldtype": "Link",
+      "label": "Fund",
+      "options": "Fund"
+    },
+    {
+      "fieldname": "mode_of_payment",
+      "fieldtype": "Select",
+      "label": "Mode of Payment",
+      "options": "NEFT\nRTGS\nCheque\nCash\nOnline Gateway\nUPI\nForeign Wire Transfer",
+      "reqd": 1
+    },
+    {
+      "fieldname": "purpose",
+      "fieldtype": "Data",
+      "label": "Purpose"
+    },
+    {
+      "fieldname": "is_80g_receipt_issued",
+      "fieldtype": "Check",
+      "label": "80G Receipt Issued",
+      "read_only": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Donation",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Civic Operations",
+  "name": "Donation",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "track_changes": 1
+}

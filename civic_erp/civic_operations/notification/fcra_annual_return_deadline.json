@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.docstatus == 0",
+  "creation": "2024-01-01 00:00:00.000000",
+  "days_in_advance": 30,
+  "doctype": "Notification",
+  "document_type": "FCRA Annual Return",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>FCRA Annual Return for <b>{{ doc.financial_year }}</b> is due on {{ doc.due_date }}. Please complete FC-4 filing.</p>",
+  "name": "FCRA Annual Return Deadline",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "FCRA Annual Return Due in 30 Days: {{ doc.financial_year }}",
+  "date_changed": "due_date"
+}
