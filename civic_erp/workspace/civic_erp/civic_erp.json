@@ -1,7 +1,7 @@
 {
   "category": "Modules",
   "charts": [],
-  "content": "[{\"id\": \"hd-1\", \"type\": \"header\", \"data\": {\"text\": \"Fund Accounting\", \"col\": 12}}, {\"id\": \"sc-1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund\", \"col\": 3}}, {\"id\": \"sc-2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund Transaction\", \"col\": 3}}, {\"id\": \"sc-3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Head\", \"col\": 3}}, {\"id\": \"sc-4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund Transfer\", \"col\": 3}}, {\"id\": \"hd-2\", \"type\": \"header\", \"data\": {\"text\": \"Grant Management\", \"col\": 12}}, {\"id\": \"sc-5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant\", \"col\": 3}}, {\"id\": \"sc-6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Application\", \"col\": 3}}, {\"id\": \"sc-7\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Disbursement\", \"col\": 3}}, {\"id\": \"sc-8\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Utilization Report\", \"col\": 3}}, {\"id\": \"hd-3\", \"type\": \"header\", \"data\": {\"text\": \"Donor Management\", \"col\": 12}}, {\"id\": \"sc-9\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donor\", \"col\": 3}}, {\"id\": \"sc-10\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donation\", \"col\": 3}}, {\"id\": \"sc-11\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donation Receipt\", \"col\": 3}}, {\"id\": \"sc-12\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pledge\", \"col\": 3}}, {\"id\": \"hd-4\", \"type\": \"header\", \"data\": {\"text\": \"FCRA & CSR\", \"col\": 12}}, {\"id\": \"sc-13\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"FCRA Registration\", \"col\": 3}}, {\"id\": \"sc-14\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Foreign Contribution\", \"col\": 3}}, {\"id\": \"sc-15\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"FCRA Annual Return\", \"col\": 3}}, {\"id\": \"sc-16\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"CSR Project\", \"col\": 3}}, {\"id\": \"hd-5\", \"type\": \"header\", \"data\": {\"text\": \"Programs & Beneficiaries\", \"col\": 12}}, {\"id\": \"sc-17\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Program\", \"col\": 3}}, {\"id\": \"sc-18\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Beneficiary\", \"col\": 3}}, {\"id\": \"sc-19\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Beneficiary Enrollment\", \"col\": 3}}, {\"id\": \"sc-20\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Program Activity\", \"col\": 3}}, {\"id\": \"hd-6\", \"type\": \"header\", \"data\": {\"text\": \"Volunteers\", \"col\": 12}}, {\"id\": \"sc-21\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer\", \"col\": 3}}, {\"id\": \"sc-22\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer Assignment\", \"col\": 3}}, {\"id\": \"sc-23\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer Timesheet\", \"col\": 3}}, {\"id\": \"hd-7\", \"type\": \"header\", \"data\": {\"text\": \"Procurement & HR\", \"col\": 12}}, {\"id\": \"sc-24\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Tender\", \"col\": 3}}, {\"id\": \"sc-25\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Procurement Request\", \"col\": 3}}, {\"id\": \"sc-26\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Staff\", \"col\": 3}}, {\"id\": \"sc-27\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Compliance Tracker\", \"col\": 3}}, {\"id\": \"hd-8\", \"type\": \"header\", \"data\": {\"text\": \"Governance\", \"col\": 12}}, {\"id\": \"sc-28\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Board Member\", \"col\": 3}}, {\"id\": \"sc-29\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Board Meeting\", \"col\": 3}}, {\"id\": \"sc-30\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Utilization Certificate\", \"col\": 3}}]",
+  "content": "[{\"id\": \"hd-1\", \"type\": \"header\", \"data\": {\"text\": \"Fund Accounting\", \"col\": 12}}, {\"id\": \"sc-1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund\", \"col\": 3}}, {\"id\": \"sc-2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund Transaction\", \"col\": 3}}, {\"id\": \"sc-3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Head\", \"col\": 3}}, {\"id\": \"sc-4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund Transfer\", \"col\": 3}}, {\"id\": \"hd-2\", \"type\": \"header\", \"data\": {\"text\": \"Grant Management\", \"col\": 12}}, {\"id\": \"sc-5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant\", \"col\": 3}}, {\"id\": \"sc-6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Application\", \"col\": 3}}, {\"id\": \"sc-7\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Disbursement\", \"col\": 3}}, {\"id\": \"sc-8\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Utilization Report\", \"col\": 3}}, {\"id\": \"hd-3\", \"type\": \"header\", \"data\": {\"text\": \"Donor Management\", \"col\": 12}}, {\"id\": \"sc-9\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donor\", \"col\": 3}}, {\"id\": \"sc-10\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donation\", \"col\": 3}}, {\"id\": \"sc-11\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donation Receipt\", \"col\": 3}}, {\"id\": \"sc-12\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pledge\", \"col\": 3}}, {\"id\": \"hd-4\", \"type\": \"header\", \"data\": {\"text\": \"FCRA & CSR\", \"col\": 12}}, {\"id\": \"sc-13\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"FCRA Registration\", \"col\": 3}}, {\"id\": \"sc-14\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Foreign Contribution\", \"col\": 3}}, {\"id\": \"sc-15\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"FCRA Annual Return\", \"col\": 3}}, {\"id\": \"sc-16\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"CSR Project\", \"col\": 3}}, {\"id\": \"hd-5\", \"type\": \"header\", \"data\": {\"text\": \"Programs & Beneficiaries\", \"col\": 12}}, {\"id\": \"sc-17\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Program\", \"col\": 3}}, {\"id\": \"sc-18\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Beneficiary\", \"col\": 3}}, {\"id\": \"sc-19\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Beneficiary Enrollment\", \"col\": 3}}, {\"id\": \"sc-20\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Program Activity\", \"col\": 3}}, {\"id\": \"hd-6\", \"type\": \"header\", \"data\": {\"text\": \"Volunteers\", \"col\": 12}}, {\"id\": \"sc-21\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer\", \"col\": 3}}, {\"id\": \"sc-22\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer Assignment\", \"col\": 3}}, {\"id\": \"sc-23\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer Timesheet\", \"col\": 3}}, {\"id\": \"hd-7\", \"type\": \"header\", \"data\": {\"text\": \"Procurement & HR\", \"col\": 12}}, {\"id\": \"sc-24\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Tender\", \"col\": 3}}, {\"id\": \"sc-25\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Procurement Request\", \"col\": 3}}, {\"id\": \"sc-26\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Staff\", \"col\": 3}}, {\"id\": \"sc-27\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Compliance Tracker\", \"col\": 3}}, {\"id\": \"hd-8\", \"type\": \"header\", \"data\": {\"text\": \"Governance\", \"col\": 12}}, {\"id\": \"sc-28\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Board Member\", \"col\": 3}}, {\"id\": \"sc-29\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Board Meeting\", \"col\": 3}}, {\"id\": \"sc-30\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Utilization Certificate\", \"col\": 3}}, {\"id\": \"hd-reports\", \"type\": \"header\", \"data\": {\"text\": \"Reports\", \"col\": 12}}, {\"id\": \"sc-r-0\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fund Balance Report\", \"col\": 3}}, {\"id\": \"sc-r-1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Utilization Summary\", \"col\": 3}}, {\"id\": \"sc-r-2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"FCRA Admin Expense Ratio\", \"col\": 3}}, {\"id\": \"sc-r-3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donor Ledger\", \"col\": 3}}, {\"id\": \"sc-r-4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Program-wise Expenditure\", \"col\": 3}}, {\"id\": \"sc-r-5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer Hours Summary\", \"col\": 3}}, {\"id\": \"sc-r-6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Compliance Calendar Report\", \"col\": 3}}, {\"id\": \"sc-r-7\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"CSR Utilization Dashboard\", \"col\": 3}}, {\"id\": \"sc-r-8\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Foreign vs Domestic Fund Split\", \"col\": 3}}, {\"id\": \"sc-r-9\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Board Meeting Attendance Register\", \"col\": 3}}]",
   "doctype": "Workspace",
   "for_user": "",
   "icon": "uil uil-building",
@@ -193,6 +193,66 @@
       "link_to": "Utilization Certificate",
       "type": "DocType",
       "name": "sc-uc"
+    },
+    {
+      "label": "Fund Balance Report",
+      "link_to": "Fund Balance Report",
+      "type": "Report",
+      "name": "sc-report-0"
+    },
+    {
+      "label": "Grant Utilization Summary",
+      "link_to": "Grant Utilization Summary",
+      "type": "Report",
+      "name": "sc-report-1"
+    },
+    {
+      "label": "FCRA Admin Expense Ratio",
+      "link_to": "FCRA Admin Expense Ratio",
+      "type": "Report",
+      "name": "sc-report-2"
+    },
+    {
+      "label": "Donor Ledger",
+      "link_to": "Donor Ledger",
+      "type": "Report",
+      "name": "sc-report-3"
+    },
+    {
+      "label": "Program-wise Expenditure",
+      "link_to": "Program-wise Expenditure",
+      "type": "Report",
+      "name": "sc-report-4"
+    },
+    {
+      "label": "Volunteer Hours Summary",
+      "link_to": "Volunteer Hours Summary",
+      "type": "Report",
+      "name": "sc-report-5"
+    },
+    {
+      "label": "Compliance Calendar Report",
+      "link_to": "Compliance Calendar Report",
+      "type": "Report",
+      "name": "sc-report-6"
+    },
+    {
+      "label": "CSR Utilization Dashboard",
+      "link_to": "CSR Utilization Dashboard",
+      "type": "Report",
+      "name": "sc-report-7"
+    },
+    {
+      "label": "Foreign vs Domestic Fund Split",
+      "link_to": "Foreign vs Domestic Fund Split",
+      "type": "Report",
+      "name": "sc-report-8"
+    },
+    {
+      "label": "Board Meeting Attendance Register",
+      "link_to": "Board Meeting Attendance Register",
+      "type": "Report",
+      "name": "sc-report-9"
     }
   ],
   "links": [],
