@@ -63,3 +63,11 @@ override_doctype_class = {
     "Board Meeting": "civic_erp.civic_operations.doctype.board_meeting.board_meeting.BoardMeeting",
     "Compliance Tracker": "civic_erp.civic_operations.doctype.compliance_tracker.compliance_tracker.ComplianceTracker",
 }
+
+fixtures = [
+    {"doctype": "Workspace", "filters": [["name", "in", ["CivicEdge"]]]},
+    {"doctype": "Notification", "filters": [["document_type", "in", [
+        "Compliance Tracker", "FCRA Registration", "FCRA Annual Return",
+        "Foreign Contribution", "Grant Disbursement", "Grant", "Pledge", "Board Meeting"
+    ]]]},
+]
