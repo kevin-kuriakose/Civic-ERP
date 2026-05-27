@@ -1,117 +1,117 @@
 {
-  "actions": [],
-  "autoname": "naming_series:",
-  "creation": "2024-01-01 00:00:00.000000",
-  "doctype": "DocType",
-  "engine": "InnoDB",
-  "is_submittable": 1,
-  "field_order": [
-    "naming_series",
-    "department",
-    "item_or_service",
-    "estimated_cost",
-    "col1",
-    "fund_head",
-    "justification",
-    "approval_chain",
-    "status",
-    "amended_from"
-  ],
-  "fields": [
-    {
-      "fieldname": "naming_series",
-      "fieldtype": "Series",
-      "label": "Series",
-      "options": "PR-.YYYY.-.#####",
-      "default": "PR-.YYYY.-.#####"
-    },
-    {
-      "fieldname": "department",
-      "fieldtype": "Link",
-      "label": "Department",
-      "options": "Department",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "item_or_service",
-      "fieldtype": "Data",
-      "label": "Item / Service",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "estimated_cost",
-      "fieldtype": "Currency",
-      "label": "Estimated Cost (Rs)",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "col1",
-      "fieldtype": "Column Break"
-    },
-    {
-      "fieldname": "fund_head",
-      "fieldtype": "Link",
-      "label": "Fund Head",
-      "options": "Budget Head"
-    },
-    {
-      "fieldname": "justification",
-      "fieldtype": "Small Text",
-      "label": "Justification"
-    },
-    {
-      "fieldname": "approval_chain",
-      "fieldtype": "Small Text",
-      "label": "Approval Chain"
-    },
-    {
-      "fieldname": "status",
-      "fieldtype": "Select",
-      "label": "Status",
-      "options": "Draft\nPending Approval\nApproved\nRejected\nProcured",
-      "default": "Draft",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "amended_from",
-      "fieldtype": "Link",
-      "label": "Amended From",
-      "options": "Procurement Request",
-      "no_copy": 1,
-      "print_hide": 1,
-      "read_only": 1
-    }
-  ],
-  "module": "Civic Operations",
-  "name": "Procurement Request",
-  "naming_rule": "By \"Naming Series\" field",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "role": "System Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1,
-      "submit": 1,
-      "cancel": 1,
-      "amend": 1
-    },
-    {
-      "role": "Accounts Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "submit": 1
-    },
-    {
-      "role": "Accounts User",
-      "read": 1,
-      "write": 1,
-      "create": 1
-    }
-  ],
-  "track_changes": 1
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "is_submittable": 1,
+ "field_order": [
+  "naming_series",
+  "department",
+  "item_or_service",
+  "estimated_cost",
+  "col1",
+  "fund_head",
+  "justification",
+  "approval_chain",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Series",
+   "label": "Series",
+   "options": "PR-.YYYY.-.#####",
+   "default": "PR-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "BA Department",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "item_or_service",
+   "fieldtype": "Data",
+   "label": "Item / Service",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Cost (Rs)",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fund_head",
+   "fieldtype": "Link",
+   "label": "Fund Head",
+   "options": "Budget Head"
+  },
+  {
+   "fieldname": "justification",
+   "fieldtype": "Small Text",
+   "label": "Justification"
+  },
+  {
+   "fieldname": "approval_chain",
+   "fieldtype": "Small Text",
+   "label": "Approval Chain"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending Approval\nApproved\nRejected\nProcured",
+   "default": "Draft",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Procurement Request",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "module": "Civic Operations",
+ "name": "Procurement Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1
+  },
+  {
+   "role": "Accounts User",
+   "read": 1,
+   "write": 1,
+   "create": 1
+  }
+ ],
+ "track_changes": 1
 }

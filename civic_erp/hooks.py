@@ -8,7 +8,7 @@ app_email = "admin@bizaxl.com"
 app_license = "MIT"
 app_version = "0.0.1"
 
-required_apps = ["frappe", "erpnext"]
+required_apps = ["frappe", "bizaxl_erp"]
 
 app_include_css = "/assets/civic_erp/css/civic_erp.css"
 app_include_js = "/assets/civic_erp/js/civic_erp.js"

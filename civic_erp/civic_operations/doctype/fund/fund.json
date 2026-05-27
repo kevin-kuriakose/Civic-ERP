@@ -1,117 +1,117 @@
 {
-  "actions": [],
-  "autoname": "naming_series:",
-  "creation": "2024-01-01 00:00:00.000000",
-  "doctype": "DocType",
-  "engine": "InnoDB",
-  "field_order": [
-    "naming_series",
-    "fund_name",
-    "fund_type",
-    "source",
-    "status",
-    "col1",
-    "balance",
-    "linked_cost_center",
-    "opening_balance",
-    "section_notes",
-    "description"
-  ],
-  "fields": [
-    {
-      "fieldname": "naming_series",
-      "fieldtype": "Series",
-      "label": "Series",
-      "options": "FUND-.YYYY.-.#####",
-      "default": "FUND-.YYYY.-.#####"
-    },
-    {
-      "fieldname": "fund_name",
-      "fieldtype": "Data",
-      "label": "Fund Name",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "fund_type",
-      "fieldtype": "Select",
-      "label": "Fund Type",
-      "options": "Restricted\nUnrestricted\nEndowment\nCorpus\nEmergency Relief",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "source",
-      "fieldtype": "Select",
-      "label": "Source",
-      "options": "Donor\nGrant\nGovernment\nCSR\nInternal",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "status",
-      "fieldtype": "Select",
-      "label": "Status",
-      "options": "Active\nClosed\nFrozen",
-      "default": "Active",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "col1",
-      "fieldtype": "Column Break"
-    },
-    {
-      "fieldname": "balance",
-      "fieldtype": "Currency",
-      "label": "Current Balance (Rs)",
-      "read_only": 1
-    },
-    {
-      "fieldname": "linked_cost_center",
-      "fieldtype": "Link",
-      "label": "Linked Cost Center",
-      "options": "Cost Center"
-    },
-    {
-      "fieldname": "opening_balance",
-      "fieldtype": "Currency",
-      "label": "Opening Balance (Rs)",
-      "default": "0"
-    },
-    {
-      "fieldname": "section_notes",
-      "fieldtype": "Section Break",
-      "label": "Notes"
-    },
-    {
-      "fieldname": "description",
-      "fieldtype": "Small Text",
-      "label": "Description"
-    }
-  ],
-  "module": "Civic Operations",
-  "name": "Fund",
-  "naming_rule": "By \"Naming Series\" field",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "role": "System Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1
-    },
-    {
-      "role": "Accounts Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1
-    },
-    {
-      "role": "Accounts User",
-      "read": 1
-    }
-  ],
-  "title_field": "fund_name",
-  "track_changes": 1
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "fund_name",
+  "fund_type",
+  "source",
+  "status",
+  "col1",
+  "balance",
+  "linked_cost_center",
+  "opening_balance",
+  "section_notes",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Series",
+   "label": "Series",
+   "options": "FUND-.YYYY.-.#####",
+   "default": "FUND-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "fund_name",
+   "fieldtype": "Data",
+   "label": "Fund Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fund_type",
+   "fieldtype": "Select",
+   "label": "Fund Type",
+   "options": "Restricted\nUnrestricted\nEndowment\nCorpus\nEmergency Relief",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Donor\nGrant\nGovernment\nCSR\nInternal",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nClosed\nFrozen",
+   "default": "Active",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Current Balance (Rs)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linked_cost_center",
+   "fieldtype": "Link",
+   "label": "Linked Cost Center",
+   "options": "BA Cost Center"
+  },
+  {
+   "fieldname": "opening_balance",
+   "fieldtype": "Currency",
+   "label": "Opening Balance (Rs)",
+   "default": "0"
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "module": "Civic Operations",
+ "name": "Fund",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Accounts User",
+   "read": 1
+  }
+ ],
+ "title_field": "fund_name",
+ "track_changes": 1
 }

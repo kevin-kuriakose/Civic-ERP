@@ -1,105 +1,105 @@
 {
-  "actions": [],
-  "autoname": "naming_series:",
-  "creation": "2024-01-01 00:00:00.000000",
-  "doctype": "DocType",
-  "engine": "InnoDB",
-  "field_order": [
-    "naming_series",
-    "staff_name",
-    "designation",
-    "department",
-    "appointment_type",
-    "col1",
-    "fund_allocation_percent",
-    "joining_date",
-    "linked_employee",
-    "status"
-  ],
-  "fields": [
-    {
-      "fieldname": "naming_series",
-      "fieldtype": "Series",
-      "label": "Series",
-      "options": "STF-.YYYY.-.#####",
-      "default": "STF-.YYYY.-.#####"
-    },
-    {
-      "fieldname": "staff_name",
-      "fieldtype": "Data",
-      "label": "Name",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "designation",
-      "fieldtype": "Link",
-      "label": "Designation",
-      "options": "Designation",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "department",
-      "fieldtype": "Link",
-      "label": "Department",
-      "options": "Department"
-    },
-    {
-      "fieldname": "appointment_type",
-      "fieldtype": "Select",
-      "label": "Appointment Type",
-      "options": "Regular\nContract\nProject-based",
-      "reqd": 1
-    },
-    {
-      "fieldname": "col1",
-      "fieldtype": "Column Break"
-    },
-    {
-      "fieldname": "fund_allocation_percent",
-      "fieldtype": "Float",
-      "label": "Fund Allocation %",
-      "default": "100"
-    },
-    {
-      "fieldname": "joining_date",
-      "fieldtype": "Date",
-      "label": "Joining Date"
-    },
-    {
-      "fieldname": "linked_employee",
-      "fieldtype": "Link",
-      "label": "ERPNext Employee",
-      "options": "Employee"
-    },
-    {
-      "fieldname": "status",
-      "fieldtype": "Select",
-      "label": "Status",
-      "options": "Active\nResigned\nTerminated",
-      "default": "Active",
-      "in_list_view": 1
-    }
-  ],
-  "module": "Civic Operations",
-  "name": "Staff",
-  "naming_rule": "By \"Naming Series\" field",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "role": "System Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1
-    },
-    {
-      "role": "HR Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1
-    }
-  ],
-  "title_field": "staff_name",
-  "track_changes": 1
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "staff_name",
+  "designation",
+  "department",
+  "appointment_type",
+  "col1",
+  "fund_allocation_percent",
+  "joining_date",
+  "linked_employee",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Series",
+   "label": "Series",
+   "options": "STF-.YYYY.-.#####",
+   "default": "STF-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "BA Designation",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "BA Department"
+  },
+  {
+   "fieldname": "appointment_type",
+   "fieldtype": "Select",
+   "label": "Appointment Type",
+   "options": "Regular\nContract\nProject-based",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fund_allocation_percent",
+   "fieldtype": "Float",
+   "label": "Fund Allocation %",
+   "default": "100"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "linked_employee",
+   "fieldtype": "Link",
+   "label": "ERPNext Employee",
+   "options": "BA Employee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nResigned\nTerminated",
+   "default": "Active",
+   "in_list_view": 1
+  }
+ ],
+ "module": "Civic Operations",
+ "name": "Staff",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1
+  }
+ ],
+ "title_field": "staff_name",
+ "track_changes": 1
 }

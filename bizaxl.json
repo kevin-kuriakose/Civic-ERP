@@ -1,0 +1,20 @@
+{
+    "app_name": "civic_erp",
+    "display_name": "CivicEdge",
+    "description": "Government & NGO Operations",
+    "show_modules": [
+        "Accounts", "Buying", "Selling",
+        "HR", "Projects", "CRM", "Contacts", "Non Profit"
+    ],
+    "hide_modules": [
+        "Manufacturing", "Stock", "Agriculture",
+        "Healthcare", "Education", "Hospitality",
+        "E-commerce", "Loan Management", "Utilities"
+    ],
+    "optional_modules": [
+        {"module": "Assets", "label": "Asset Management", "description": "Track government assets"},
+        {"module": "Support", "label": "Support & Helpdesk", "description": "Citizen support tickets"},
+        {"module": "Website", "label": "Website & CMS", "description": "Public portal"},
+        {"module": "Quality", "label": "Quality Management", "description": "Compliance tracking"}
+    ]
+}
